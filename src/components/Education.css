@@ -1,0 +1,164 @@
+.education {
+  position: relative;
+  padding: 7rem 0;
+  background: var(--bg-white);
+}
+
+.educ-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  padding: 4rem 0;
+}
+
+.educ-heading {
+  font-family: var(--font-display);
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  line-height: 0.9;
+  color: var(--black);
+  margin-bottom: 2.25rem;
+}
+
+.educ-script {
+  font-family: var(--font-script);
+  font-size: clamp(2.5rem, 5vw, 4.5rem);
+  text-transform: none;
+  display: block;
+  color: var(--blue);
+}
+
+/* Education list */
+.educ-list { display: flex; flex-direction: column; gap: 0; }
+
+.educ-item {
+  display: flex;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.educ-item:hover { transform: translateX(4px); }
+
+.educ-item-left {
+  flex: 0 0 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.educ-period {
+  font-size: 0.65rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+.educ-grade {
+  font-size: 0.75rem;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.educ-degree {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 0.2rem;
+}
+
+.educ-inst {
+  font-size: 0.925rem;
+  color: var(--text-mid);
+}
+
+.educ-loc {
+  font-size: 0.8rem;
+  color: var(--text-light);
+  margin-top: 0.1rem;
+}
+
+/* Certificates */
+.cert-list { display: flex; flex-direction: column; gap: 0; margin-bottom: 2rem; }
+
+.cert-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--border);
+  transition: var(--transition);
+  text-decoration: none;
+  color: inherit;
+}
+
+.cert-item--linked {
+  cursor: pointer;
+}
+
+.cert-item--linked:hover {
+  transform: translateX(4px);
+  color: var(--blue);
+}
+
+.cert-item--linked:hover .cert-name { color: var(--blue); }
+.cert-item--linked:hover .cert-num { color: var(--blue); }
+
+.cert-link-icon {
+  margin-left: auto;
+  flex-shrink: 0;
+  font-size: 0.9rem;
+  color: var(--blue);
+  opacity: 0.6;
+  transition: opacity 0.2s;
+}
+
+.cert-item--linked:hover .cert-link-icon { opacity: 1; }
+
+.cert-num {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--grey-200);
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.cert-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--black);
+  margin-bottom: 0.2rem;
+  transition: color 0.2s;
+}
+
+.cert-meta {
+  font-size: 0.75rem;
+  color: var(--text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 600;
+}
+
+/* Extras */
+.extras-block {
+  background: rgba(37,99,235,0.04);
+  padding: 1.5rem;
+  border-left: 3px solid var(--blue);
+}
+
+.extra-item {
+  font-size: 0.875rem;
+  color: var(--text-mid);
+  line-height: 1.7;
+  margin-bottom: 0.5rem;
+}
+
+.extra-item:last-child { margin-bottom: 0; }
+
+@media (max-width: 900px) {
+  .educ-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+}

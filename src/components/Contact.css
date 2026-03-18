@@ -1,0 +1,140 @@
+.contact {
+  position: relative;
+  padding: 5rem 0;
+  background: var(--bg);
+  overflow: hidden;
+}
+
+.contact-ghost {
+  position: absolute !important;
+  left: -5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.contact-ghost span {
+  font-family: var(--font-display);
+  font-size: clamp(6rem, 18vw, 20rem);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(0,0,0,0.05);
+  white-space: nowrap;
+  line-height: 1;
+}
+
+.contact-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+  position: relative;
+  z-index: 1;
+  padding: 4rem 0;
+}
+
+/* Big type */
+.contact-big-type {
+  line-height: 0.85;
+  margin-bottom: 1.5rem;
+}
+
+.ct-say {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 9vw, 9rem);
+  color: var(--black);
+  display: block;
+  letter-spacing: -0.02em;
+}
+
+.ct-hello {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 9vw, 9rem);
+  color: transparent;
+  -webkit-text-stroke: 2px var(--blue);
+  letter-spacing: -0.02em;
+}
+
+.ct-script {
+  font-family: var(--font-script);
+  font-size: clamp(3rem, 7vw, 7rem);
+  color: var(--blue);
+}
+
+.contact-sub {
+  font-size: 0.9rem;
+  color: var(--text-mid);
+  line-height: 1.75;
+  max-width: 320px;
+}
+
+/* Contact cards */
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-bottom: 1.5rem;
+}
+
+.ct-card {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.ct-card:hover { transform: translateX(4px); }
+
+.ct-card-icon {
+  width: 36px;
+  height: 36px;
+  background: var(--blue-dim);
+  border: 1px solid rgba(37,99,235,0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.9rem;
+  color: var(--blue);
+  flex-shrink: 0;
+}
+
+.ct-card-label {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  font-weight: 700;
+  margin-bottom: 0.1rem;
+}
+
+.ct-card-val {
+  display: block;
+  font-size: 0.85rem;
+  color: var(--text-dark);
+  word-break: break-all;
+}
+
+.ct-cta-btn {
+  display: block;
+  width: 100%;
+  background: var(--blue);
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: var(--transition);
+}
+
+.ct-cta-btn:hover { background: var(--blue-light); }
+
+@media (max-width: 900px) {
+  .contact-inner { grid-template-columns: 1fr; gap: 2.5rem; }
+  .ct-say, .ct-hello { font-size: clamp(3rem, 15vw, 6rem); }
+}

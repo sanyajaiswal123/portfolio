@@ -1,0 +1,125 @@
+.navbar {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  padding: 1.25rem 0;
+  transition: var(--transition);
+}
+
+.navbar.scrolled {
+  background: rgba(240, 238, 235, 0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--border-dark);
+  padding: 0.8rem 0;
+}
+
+.nav-inner {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-size: 1.6rem;
+  letter-spacing: 0.05em;
+  color: var(--black);
+  flex-shrink: 0;
+}
+
+.logo-dot { color: var(--black); }
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+.nav-link {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-mid);
+  padding: 0.35rem 0.75rem;
+  border-radius: 2px;
+  transition: var(--transition);
+}
+
+.nav-link:hover { color: var(--black); }
+
+.nav-cta {
+  background: var(--black);
+  color: var(--white);
+  padding: 0.5rem 1.25rem;
+  border-radius: 2px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  transition: var(--transition);
+  flex-shrink: 0;
+}
+
+.nav-cta:hover { background: var(--grey-700); }
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+  margin-left: auto;
+}
+
+.hamburger span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--black);
+  border-radius: 1px;
+  transition: var(--transition);
+}
+
+.hamburger span.open:nth-child(1) { transform: translateY(7px) rotate(45deg); }
+.hamburger span.open:nth-child(2) { opacity: 0; }
+.hamburger span.open:nth-child(3) { transform: translateY(-7px) rotate(-45deg); }
+
+.mobile-menu {
+  padding: 1rem 2.5rem 1.5rem;
+  background: var(--bg);
+  border-top: 1px solid var(--border-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.mobile-link {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.mobile-cta {
+  margin-top: 0.75rem;
+  background: var(--black);
+  color: var(--white);
+  padding: 0.7rem 1.5rem;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .nav-links, .nav-cta { display: none; }
+  .hamburger { display: flex; }
+}

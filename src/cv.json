@@ -1,0 +1,194 @@
+{
+  "personal": {
+    "name": "Sanya Jaiswal",
+    "firstName": "Sanya",
+    "lastName": "Jaiswal",
+    "roles": [
+      "Fullstack Developer",
+      "UI/UX Designer"
+    ],
+    "tagline": "Crafting digital experiences with code & creativity.",
+    "bio": "I am a passionate Computer Science student and fullstack developer who loves building beautiful, functional web experiences. I thrive on clean code, intuitive design, and pushing my limits through every project.",
+    "email": "sanyaajaiswal22@gmail.com",
+    "mobile": "+91-6387565407",
+    "location": "Punjab, India",
+    "linkedin": "www.linkedin.com/in/sanya-jaiswal05/",
+    "github": "github.com/sanyajaiswal123",
+    "university": "Lovely Professional University",
+    "degree": "B.Tech - Computer Science & Engineering",
+    "cgpa": "6.7"
+  },
+  "skills": {
+    "languages": [
+      "C",
+      "C++",
+      "Java",
+      "Python"
+    ],
+    "frameworks": [
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "React JS",
+      "Node JS"
+    ],
+    "tools": [
+      "MySQL",
+      "GitHub",
+      "Visual Studio Code",
+      "Figma"
+    ],
+    "soft": [
+      "Problem-Solving",
+      "Adaptability",
+      "Teamwork",
+      "Time Management"
+    ],
+    "design": [
+      {
+        "name": "UI/UX Design",
+        "level": 82
+      },
+      {
+        "name": "Figma / Wireframing",
+        "level": 78
+      },
+      {
+        "name": "Responsive Design",
+        "level": 90
+      }
+    ],
+    "development": [
+      {
+        "name": "React JS",
+        "level": 80
+      },
+      {
+        "name": "Node JS",
+        "level": 75
+      },
+      {
+        "name": "Python",
+        "level": 85
+      },
+      {
+        "name": "C++ / DSA",
+        "level": 80
+      }
+    ]
+  },
+  "projects": [
+    {
+      "name": "Local Food Business Directory",
+      "period": "Mar'25 – May'25",
+      "github": "https://github.com/sanyajaiswal123/local-food-directory",
+      "description": [
+        "Built a web-based directory platform to help users discover and connect with nearby food businesses.",
+        "Integrated a backend system for managing business listings, customer info, and reviews.",
+        "Improved search relevance by 85% using location-based recommendations."
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "PHP",
+        "MySQL"
+      ]
+    },
+    {
+      "name": "Secure System Call Interface",
+      "period": "Apr'25",
+      "github": "https://github.com/sanyajaiswal123/Secure_system_call_interface",
+      "description": [
+        "Designed a secure simulator for system calls with user authentication and access control.",
+        "Developed role-based login using ACLs to prevent unauthorized access.",
+        "Reduced unauthorized access risks by 40% and improved audit transparency."
+      ],
+      "tech": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Python"
+      ]
+    }
+  ],
+  "training": [
+    {
+      "name": "DSA with C++",
+      "provider": "CSE PathShala",
+      "period": "Jul'25",
+      "description": "Implemented Arrays, Linked Lists, Stacks, Queues, Trees, Graphs. Improved code efficiency by 30%."
+    }
+  ],
+  "certificates": [
+    {
+      "name": "Java",
+      "provider": "iamneo",
+      "date": "May'25",
+      "link": ""
+    },
+    {
+      "name": "Privacy Security in Social Media",
+      "provider": "NPTEL",
+      "date": "Apr'25",
+      "link": "https://drive.google.com/file/d/17S8m4qRsijNOJslXx5Zcjee_xzOCtpue/view"
+    },
+    {
+      "name": "Object Oriented Programming",
+      "provider": "iamneo",
+      "date": "Dec'24",
+      "link": ""
+    },
+    {
+      "name": "Responsive Web Design",
+      "provider": "Free Code Camp",
+      "date": "Oct'23",
+      "link": "https://drive.google.com/file/d/1QnzfDWOixw3gYUq1cgMb-3Y15KbbFbAF/view"
+    }
+  ],
+  "education": [
+    {
+      "degree": "B.Tech - Computer Science & Engineering",
+      "institution": "Lovely Professional University",
+      "location": "Punjab, India",
+      "period": "Since Aug'23",
+      "grade": "CGPA: 6.7"
+    },
+    {
+      "degree": "Intermediate",
+      "institution": "RPM Academy",
+      "location": "Uttar Pradesh, India",
+      "period": "Apr'22 – Mar'23",
+      "grade": "72%"
+    },
+    {
+      "degree": "Matriculation",
+      "institution": "Sterling Public School",
+      "location": "Uttar Pradesh, India",
+      "period": "Apr'20 – Mar'21",
+      "grade": "74%"
+    }
+  ],
+  "extras": [
+    "Contributed to community environmental initiatives including tree plantation campaigns.",
+    "Supported coordination of volunteer teams during environmental campaigns."
+  ],
+  "services": [
+    {
+      "title": "UI/UX Design",
+      "description": "Creating intuitive, beautiful interfaces that users love to interact with."
+    },
+    {
+      "title": "Fullstack Development",
+      "description": "End-to-end web applications from frontend to backend."
+    },
+    {
+      "title": "Problem Solving",
+      "description": "Algorithmic thinking and DSA expertise for efficient solutions."
+    },
+    {
+      "title": "Open Source",
+      "description": "Contributing to and building tools that make developers' lives easier."
+    }
+  ]
+}

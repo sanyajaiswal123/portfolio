@@ -1,0 +1,111 @@
+.logofolio {
+  position: relative;
+  padding: 8rem 0;
+  overflow: hidden;
+  background: var(--bg);
+}
+
+.logo-parallax-text {
+  position: absolute !important;
+  top: 3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  pointer-events: none;
+  z-index: 0;
+  white-space: nowrap;
+}
+
+.logo-parallax-text span {
+  font-family: var(--font-display);
+  font-size: clamp(4rem, 12vw, 14rem);
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255,255,255,0.04);
+  letter-spacing: 0.05em;
+}
+
+.logofolio-title {
+  font-size: clamp(2.5rem, 5vw, 4.5rem) !important;
+}
+
+.title-dot {
+  color: var(--accent);
+}
+
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+
+.logo-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.logo-card:hover {
+  border-color: rgba(108,99,255,0.25);
+  transform: translateY(-6px);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+}
+
+.logo-visual {
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.logo-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(108,99,255,0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(2px);
+}
+
+.logo-cat {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  background: var(--accent);
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+}
+
+.logo-info {
+  padding: 0.875rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.logo-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.logo-tagline {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}
+
+@media (max-width: 900px) {
+  .logo-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+@media (max-width: 600px) {
+  .logo-grid { grid-template-columns: repeat(2, 1fr); }
+}
