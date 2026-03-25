@@ -122,6 +122,12 @@
   ],
   "certificates": [
     {
+      "name": "JavaScript (Intermediate)",
+      "provider": "HackerRank",
+      "date": "Mar'26",
+      "link": "https://www.hackerrank.com/certificates/fb6870e54dc3"
+    },
+    {
       "name": "Java",
       "provider": "iamneo",
       "date": "May'25",
