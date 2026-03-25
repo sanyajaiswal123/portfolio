@@ -159,7 +159,7 @@ export default function Hero() {
           </motion.p>
 
           <motion.div className="hero-actions" {...fadeUp(0.65)}>
-            <a href="/cv.pdf" download className="btn-download">
+            <a href="../../cv.pdf" download className="btn-download">
               <FiDownload /> Download CV
             </a>
             {/* <a href="#about" className="btn-ghost">View Work →</a> */}
